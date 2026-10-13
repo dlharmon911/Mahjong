@@ -53,6 +53,8 @@ static int32_t mah_main_initialize(mah_data_main_t* data)
 	data->m_id = -1;
 	data->m_id_last = -1;
 
+	data->m_render->m_show_debug = false;
+
 	return 0;
 }
 

@@ -63,6 +63,11 @@ void mah_main_update(mah_data_main_t* data)
 		mah_board_reset_visibility(data->m_render->m_atlas_model, &data->m_render->m_board);
 	}
 
+	if (ogle_input_keyboard_button_was_pressed(keyboard_input, ALLEGRO_KEY_F11))
+	{
+		data->m_render->m_show_debug = !data->m_render->m_show_debug;
+	}
+
 	if (ogle_input_keyboard_button_was_pressed(keyboard_input, ALLEGRO_KEY_F10))
 	{
 		mah_texture_data_t texture_data =

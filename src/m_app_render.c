@@ -278,14 +278,17 @@ static void mah_hover_render(const mah_data_main_t* data)
 			}
 		}
 
-
 		al_draw_textf(font, color, 10.0f, by + (float)(y++ * 20), ALLEGRO_ALIGN_LEFT, main_message, id);
 		al_draw_textf(font, color, 16.0f, by + (float)(y++ * 20), ALLEGRO_ALIGN_LEFT, class_message, mah_glyph_get_class_name(tile->m_id - 1));
 		al_draw_textf(font, color, 16.0f, by + (float)(y++ * 20), ALLEGRO_ALIGN_LEFT, item_message, mah_glyph_get_item_name(tile->m_id - 1));
-		al_draw_textf(font, color, 16.0f, by + (float)(y++ * 20), ALLEGRO_ALIGN_LEFT, "ID: %d", tile->m_id - 1);
-		al_draw_textf(font, color, 16.0f, by + (float)(y++ * 20), ALLEGRO_ALIGN_LEFT, "Left: %s", left ? "Yes" : "No");
-		al_draw_textf(font, color, 16.0f, by + (float)(y++ * 20), ALLEGRO_ALIGN_LEFT, "Right: %s", right ? "Yes" : "No");
-		al_draw_textf(font, color, 16.0f, by + (float)(y++ * 20), ALLEGRO_ALIGN_LEFT, "Top: %s", top ? "Yes" : "No");
+
+		if (data->m_render->m_show_debug)
+		{
+			al_draw_textf(font, color, 16.0f, by + (float)(y++ * 20), ALLEGRO_ALIGN_LEFT, "ID: %d", tile->m_id - 1);
+			al_draw_textf(font, color, 16.0f, by + (float)(y++ * 20), ALLEGRO_ALIGN_LEFT, "Left: %s", left ? "Yes" : "No");
+			al_draw_textf(font, color, 16.0f, by + (float)(y++ * 20), ALLEGRO_ALIGN_LEFT, "Right: %s", right ? "Yes" : "No");
+			al_draw_textf(font, color, 16.0f, by + (float)(y++ * 20), ALLEGRO_ALIGN_LEFT, "Top: %s", top ? "Yes" : "No");
+		}
 	}
 	else
 	{

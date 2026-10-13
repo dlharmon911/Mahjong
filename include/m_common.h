@@ -163,6 +163,7 @@ struct mah_data_render_tag_t
 	ALLEGRO_BITMAP* m_shadow_map;
 	mod_model_view_t m_tile_view[MAHJONG_TILE_COUNT];
 	mah_board_t m_board;
+	bool m_show_debug;
 };
 
 struct mah_data_main_tag_t
