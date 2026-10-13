@@ -49,6 +49,7 @@
     <None Include="assets\shaders\vertex_light.glsl">
       <Filter>Resource Files\Shader Files</Filter>
     </None>
+    <None Include="README.md" />
   </ItemGroup>
   <ItemGroup>
     <CustomBuild Include="manifest.xml">

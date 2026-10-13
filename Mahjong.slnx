@@ -3,5 +3,7 @@
     <Platform Name="x64" />
     <Platform Name="x86" />
   </Configurations>
+  <Project Path="../libmodeler/libmodeler.vcxproj" Id="58a9d288-3318-4d88-9f3e-61e3ee3666ef" />
+  <Project Path="../libogle/libogle.vcxproj" Id="9039a8de-fb9e-43cd-b32c-2c42e6ec7a3c" />
   <Project Path="Mahjong.vcxproj" Id="a90dc2a9-2fea-4edd-9f2f-03c3cb0efca0" />
 </Solution>

@@ -172,6 +172,7 @@
     <None Include="assets\shaders\vertex_light.glsl" />
     <None Include="assets\shaders\vertex_material.glsl" />
     <None Include="packages.config" />
+    <None Include="README.md" />
   </ItemGroup>
   <ItemGroup>
     <CustomBuild Include="manifest.xml">
@@ -207,6 +208,14 @@
   </ItemGroup>
   <ItemGroup>
     <Text Include="output_log.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\libmodeler\libmodeler.vcxproj">
+      <Project>{58a9d288-3318-4d88-9f3e-61e3ee3666ef}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\libogle\libogle.vcxproj">
+      <Project>{9039a8de-fb9e-43cd-b32c-2c42e6ec7a3c}</Project>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
