@@ -1,0 +1,111 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Manifest Files">
+      <UniqueIdentifier>{21cd142f-8367-424f-aed0-0a21b307a3ad}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\Shader Files">
+      <UniqueIdentifier>{7e50a109-ba8e-4859-9556-a2b2ec844392}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Log Files">
+      <UniqueIdentifier>{fcfbf5a1-489f-4e37-a7dd-2c5b1d89709a}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+    <None Include="assets\shaders\pixel_id.glsl">
+      <Filter>Resource Files\Shader Files</Filter>
+    </None>
+    <None Include="assets\shaders\pixel_material.glsl">
+      <Filter>Resource Files\Shader Files</Filter>
+    </None>
+    <None Include="assets\shaders\vertex_id.glsl">
+      <Filter>Resource Files\Shader Files</Filter>
+    </None>
+    <None Include="assets\shaders\vertex_material.glsl">
+      <Filter>Resource Files\Shader Files</Filter>
+    </None>
+    <None Include="assets\shaders\pixel_depth.glsl">
+      <Filter>Resource Files\Shader Files</Filter>
+    </None>
+    <None Include="assets\shaders\pixel_light.glsl">
+      <Filter>Resource Files\Shader Files</Filter>
+    </None>
+    <None Include="assets\shaders\vertex_depth.glsl">
+      <Filter>Resource Files\Shader Files</Filter>
+    </None>
+    <None Include="assets\shaders\vertex_light.glsl">
+      <Filter>Resource Files\Shader Files</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="manifest.xml">
+      <Filter>Manifest Files</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="resource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\m_common.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="manifest\m_manifest.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\m_app.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="manifest\m_manifest.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\m_data_render.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\m_layout.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\m_model_generator.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\m_board.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\m_app_render.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\m_app_update.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\m_mouse.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\m_glyph.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Resources.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="output_log.txt">
+      <Filter>Log Files</Filter>
+    </Text>
+  </ItemGroup>
+</Project>
